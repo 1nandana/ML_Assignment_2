@@ -28,7 +28,7 @@ st.write(
     "a customer will subscribe to a term deposit."
 )
 
-MODEL_DIR = "model"
+MODEL_DIR = "."
 
 @st.cache_resource
 def load_models():
