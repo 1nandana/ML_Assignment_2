@@ -99,7 +99,9 @@ if uploaded_file is not None:
         X_processed = preprocessor.transform(X)
         model = models[selected_model_name]
 
-        predictions = model.predict(X_processed)
+        predictions = pd.Series(predictions).astype(str).str.lower().map(
+    {"no": 0, "yes": 1, "0": 0, "1": 1}
+).to_numpy()
 
         if hasattr(model, "predict_proba"):
             scores = model.predict_proba(X_processed)[:, 1]
