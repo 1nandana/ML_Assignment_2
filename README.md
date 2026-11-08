@@ -113,4 +113,4 @@ The application loads the saved models and preprocessing artifact; it does not r
 ## 10. Project Links
 
 **GitHub Repository:** https://github.com/1nandana/ML_Assignment_2
-**Streamlit Application:**
+**Streamlit Application:** https://h4pjydufcyfyllleome3uk.streamlit.app
